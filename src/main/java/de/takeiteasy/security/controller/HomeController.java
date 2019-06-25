@@ -6,8 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
-    @RequestMapping("hello")
+    @RequestMapping("/")
     public String login() {
-        return "Hello to spring security";
+
+        return "/src/main/webapp/login.jsp";
     }
 }
