@@ -18,7 +18,6 @@ public class HomeResource {
     }
 
     @GetMapping("/admin")
-    @RolesAllowed("FINANCE")
     public String admin() {
         return "welcome to admin page.";
     }
